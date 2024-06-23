@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sgin Up Page</title>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../commen/CSS/bootstrap.min.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+
+  <div class=" Main-Container min-vh-100 overflow-hidden">
+
+    <div class="container px-5">
+
+      <div class="row d-flex justify-content-center">
+
+        <div class="col-lg-4 bg-white mx-auto layer my-3 shadow-lg">
+
+          <div class="validate-form text-center py-3 px-2 px-md-25">
+
+            <form id="registerForm" class="d-flex flex-column mb-2">
+
+              <h1 class="my-5 Poppins-Bold ">Sgin UP</h1>
+
+              <label for="signUserName" class="text-start mb-3 ps-md-2">Username</label>
+              <div  class="input-control mb-4 d-flex flex-row-reverse pb-4">
+                <input id="signUserName" class="input100 form-control border-0 " type="text" placeholder="Type your username">
+                <i class=" fa-regular fa-user align-self-center pe-3 ps-2 ps-md-3 pe-md-3 "></i>
+                <i class="focusInput"></i>
+              </div>
+              <label for="signEmail" class="text-start mb-3 ps-md-2">E-mail</label>
+              <div class="input-control mb-4 d-flex flex-row-reverse pb-4 ">
+                <input id="signEmail" class="input100 form-control border-0" type="text" placeholder="Type your E-mail">
+                <i class=" fa-regular fa-user align-self-center pe-3 ps-2 ps-md-3 pe-md-3 "></i>
+                <i class="focusInput"></i>
+              </div>
+
+              <label for="signPassword" class="text-start mb-3 ps-md-2">Password</label>
+              <div  class="input-control d-flex mb-2 flex-row-reverse pb-4 mb-4">
+                <input id="signPassword" class="input100 form-control border-0" type="password" placeholder="Type your password">
+                <i class=" fa-solid fa-lock align-self-center pe-3 ps-2 ps-md-3 pe-md-3 "></i>
+                <i class="focusInput"></i>
+              </div>
+
+              <label for="signPassConfirm" class="text-start mb-3 ps-md-2">Confirm Password</label>
+              <div class="input-control d-flex mb-2 flex-row-reverse pb-4">
+                <input id="signPassConfirm" class="input100 form-control border-0" type="password" placeholder="Type your Confirm password">
+                <i class=" fa-solid fa-lock align-self-center pe-3 ps-2 ps-md-3 pe-md-3 "></i>
+                <i class="focusInput"></i>
+              </div>
+              <div class="alert alert-danger d-none Poppins-Medium" id="nameAlert"><span class="h4">Username Alert</span><br>At Least Two Characters Name</div>
+              <div class="alert alert-danger d-none Poppins-Medium" id="emailAlert"><span class="h4">E-Mail Alert</span><br>Please Enter A Valid Email</div>
+              <div class="alert alert-danger d-none Poppins-Medium" id='passwordAlert'><span class="h4">Password Alert</span><br>-At Least 8 Characters <br> -One UpperCase At Least <br> -One Special Charactar At Least </div>
+              <div class="alert alert-danger d-none Poppins-Medium" id='passwordConfirmAlert'><span class="h4">Comfirm Password Alert</span><br>The Password And Confirm Don't Match </div>
+              <div class="alert alert-danger d-none Poppins-Medium" id="existAlert">Email Is Already Exist</div>
+              <div class="alert alert-success d-none" id="successAlert">Success You Can Login</div>
+              <a href="#" class="text-end mb-4">Forgot password?</a>
+              <div class="container-login100-form-btn mb-5">
+                <div class="wrap-login100-form-btn">
+                  <div class="login100-form-bgbtn"></div>
+                  <button class="login100-form-btn">
+                    Sgin UP
+                  </button>
+                </div>
+              </div>
+
+              <span class="fw-14 lightgray mb-4"> Or Sign Up Using</span>
+
+              <div class="d-flex justify-content-center mb-5">
+                <a href="#" class="login100-social-item bg1 align-content-center">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="login100-social-item bg2 align-content-center">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="#" class="login100-social-item bg3 align-content-center">
+                  <i class="fa-brands fa-google"></i>
+                </a>
+              </div>
+
+              <div class="signup mt-7 mb-4 d-flex flex-column justify-content-center align-items-center">
+                <span class="mb-3 lightgray fw-14">Or Login Using</span>
+                <a href="../login/index.html" class="txt2 "> Log In </a>
+              </div>
+
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="../commen/JS/bootstrap.bundle.min.js"></script>
+  <script src="JS/main.JS"></script>
+</body>
+
+</html>
