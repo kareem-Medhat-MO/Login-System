@@ -88,7 +88,7 @@ function addUser() {
         existAlert.classList.replace('d-block','d-none')
         successAlert.classList.replace('d-none','d-block')
         setTimeout(function name(params) {
-            window.location.href='../login/index.html';
+            window.location.href='./login/index.html';
         },3000);
         allUsers.push(newUser)
         console.log(allUsers);
